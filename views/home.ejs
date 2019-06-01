@@ -1,0 +1,12 @@
+<%- include("header") %>
+<h1>HOME</h1>
+<p><%=homeStartingContent %></p>
+<div class="box">
+  <% for (var i = 0; i< titleLst.length ; i++) { %>
+  <div class="item">
+    <h2><%=titleLst[i] %></h2>
+    <p><%=contentLst[i] %></p>
+  </div>
+  <% } %>
+</div>
+<%- include("footer") %>
